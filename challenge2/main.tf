@@ -29,6 +29,7 @@ resource "aws_db_instance" "rds_challenge" {
     name = "rds_challenge_terraform"
     username = "rds_terra"
     password = "rds_terra"
+    skip_final_snapshot = true
 }
 
 output "rds_output_id" {
